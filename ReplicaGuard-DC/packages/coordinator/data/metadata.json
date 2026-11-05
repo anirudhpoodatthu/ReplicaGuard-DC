@@ -7,7 +7,7 @@
       "storageDir": "C:\\Users\\honey\\OneDrive\\Desktop\\ReplicaGuard-DC-SYNTAX-RESTORE\\ReplicaGuard-DC\\storage\\server2",
       "state": "HEALTHY",
       "registeredAt": "2026-10-23T04:34:28.292Z",
-      "lastSeen": "2026-11-05T13:04:12.374Z",
+      "lastSeen": "2026-11-05T13:07:27.656Z",
       "diskUsedBytes": 3027150,
       "fileCount": 7
     },
@@ -18,7 +18,7 @@
       "storageDir": "C:\\Users\\honey\\OneDrive\\Desktop\\ReplicaGuard-DC-SYNTAX-RESTORE\\ReplicaGuard-DC\\storage\\server3",
       "state": "HEALTHY",
       "registeredAt": "2026-10-23T04:34:28.296Z",
-      "lastSeen": "2026-11-05T13:04:12.359Z",
+      "lastSeen": "2026-11-05T13:07:27.661Z",
       "diskUsedBytes": 3027150,
       "fileCount": 7
     },
@@ -29,7 +29,7 @@
       "storageDir": "C:\\Users\\honey\\OneDrive\\Desktop\\ReplicaGuard-DC-SYNTAX-RESTORE\\ReplicaGuard-DC\\storage\\server1",
       "state": "HEALTHY",
       "registeredAt": "2026-10-23T04:34:28.297Z",
-      "lastSeen": "2026-11-05T13:04:12.307Z",
+      "lastSeen": "2026-11-05T13:07:27.606Z",
       "diskUsedBytes": 3027150,
       "fileCount": 7
     }
