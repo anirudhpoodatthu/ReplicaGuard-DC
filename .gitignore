@@ -1,0 +1,7 @@
+ReplicaGuard-DC/storage/
+ReplicaGuard-DC/node_modules/
+ReplicaGuard-DC/dist/
+ReplicaGuard-DC/coverage/
+ReplicaGuard-DC/.env
+ReplicaGuard-DC/.env.*
+!ReplicaGuard-DC/.env.example
