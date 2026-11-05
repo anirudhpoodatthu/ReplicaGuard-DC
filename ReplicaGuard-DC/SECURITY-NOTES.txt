@@ -1,0 +1,23 @@
+ReplicaGuard authentication changes - IMPORTANT STATUS
+
+This build adds account signup/login endpoints, password hashing with Node.js scrypt, signed short-lived bearer tokens, and owner checks on file list/metadata/download routes. User records are stored in data/users.json under the coordinator working directory. Set AUTH_SECRET to a long random secret before use. The first account is only an administrator if BOOTSTRAP_FIRST_USER_ADMIN=true is set before signup; otherwise accounts are ordinary users.
+
+This is still a development build and MUST NOT be exposed directly to the public internet yet. Remaining hardening/testing required before public use:
+- Admin/node/recovery APIs need full server-side authorization and storage-node service-to-service authentication.
+- The metadata store is still in-memory; file ownership and metadata are lost after coordinator restart.
+- Download currently accepts the bearer token in a query parameter to support browser download links. Query tokens can appear in browser history/logs; replace with authenticated fetch/blob download or secure HttpOnly cookie before public deployment.
+- Add HTTPS through a trusted reverse proxy/tunnel and configure exact CORS origins; current CORS policy is permissive.
+- Test multi-user isolation, replication, restart recovery, and all build/test suites in the target Windows environment.
+
+Do not store sensitive/irreplaceable files or share publicly until these items are resolved. Three replicas on one computer are not a backup against disk failure, theft, ransomware, or loss of the computer.
+
+Additional changes in this build:
+- Coordinator metadata is persisted atomically to data/metadata.json by default. Set METADATA_FILE to choose another path.
+- /status, /nodes (list), and /recovery/events require an authenticated administrator.
+- Signup/login stores accounts in data/users.json. Set AUTH_SECRET to a long random value before using accounts beyond a local test.
+
+IMPORTANT LIMITATIONS:
+- Do not expose this build to the public internet yet. Storage-node registration/heartbeat and node admin simulation endpoints still require a separate shared-secret/authentication pass.
+- Download URLs in the current UI may still place a bearer token in the query string; do not use this build with sensitive data until downloads are changed to Authorization-header requests.
+- Configure HTTPS/reverse proxy or a secure tunnel before sharing a public URL.
+- Build validation in the current environment failed due to incomplete installed type packages; run npm ci and npm run build on the target Windows machine and resolve any errors before use.

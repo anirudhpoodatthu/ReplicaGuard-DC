@@ -1,0 +1,43 @@
+{
+  "name": "@replicaguard/coordinator",
+  "version": "1.0.0",
+  "description": "ReplicaGuard Coordinator / Master service",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/main.ts",
+    "start": "node dist/main.js",
+    "test": "jest",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.3.1",
+    "@fastify/multipart": "^9.0.3",
+    "@replicaguard/shared": "1.0.0",
+    "fastify": "^5.2.1",
+    "pino": "^9.6.0",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.5",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "rootDir": "src",
+    "testMatch": [
+      "**/__tests__/**/*.test.ts"
+    ],
+    "testTimeout": 10000,
+    "moduleNameMapper": {
+      "^cookie$": "<rootDir>/../../../node_modules/cookie"
+    }
+  }
+}

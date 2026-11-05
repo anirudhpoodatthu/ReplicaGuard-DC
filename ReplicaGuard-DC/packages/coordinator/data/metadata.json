@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "nodeId": "node-2",
+      "host": "localhost",
+      "port": 4102,
+      "storageDir": "C:\\Users\\honey\\OneDrive\\Desktop\\ReplicaGuard-DC-SYNTAX-RESTORE\\ReplicaGuard-DC\\storage\\server2",
+      "state": "HEALTHY",
+      "registeredAt": "2026-10-23T04:34:28.292Z",
+      "lastSeen": "2026-11-05T13:04:12.374Z",
+      "diskUsedBytes": 3027150,
+      "fileCount": 7
+    },
+    {
+      "nodeId": "node-3",
+      "host": "localhost",
+      "port": 4103,
+      "storageDir": "C:\\Users\\honey\\OneDrive\\Desktop\\ReplicaGuard-DC-SYNTAX-RESTORE\\ReplicaGuard-DC\\storage\\server3",
+      "state": "HEALTHY",
+      "registeredAt": "2026-10-23T04:34:28.296Z",
+      "lastSeen": "2026-11-05T13:04:12.359Z",
+      "diskUsedBytes": 3027150,
+      "fileCount": 7
+    },
+    {
+      "nodeId": "node-1",
+      "host": "localhost",
+      "port": 4101,
+      "storageDir": "C:\\Users\\honey\\OneDrive\\Desktop\\ReplicaGuard-DC-SYNTAX-RESTORE\\ReplicaGuard-DC\\storage\\server1",
+      "state": "HEALTHY",
+      "registeredAt": "2026-10-23T04:34:28.297Z",
+      "lastSeen": "2026-11-05T13:04:12.307Z",
+      "diskUsedBytes": 3027150,
+      "fileCount": 7
+    }
+  ],
+  "files": [
+    {
+      "fileId": "9fd26012-ef77-408b-9e50-a50c23339bed",
+      "ownerId": "142939e5-2238-4eda-990a-32ef1e89dd01",
+      "originalName": "Unit3_DC (1).ppt",
+      "sizeBytes": 1555968,
+      "checksum": "sha256:c8015f2bb139eb1c7e9dcbb0a0de336b35eca6d9dbdcce86b53207b3ea9a2ad6",
+      "uploadedAt": "2026-10-23T04:35:12.004Z",
+      "replicas": [
+        {
+          "nodeId": "node-2",
+          "storedAt": "2026-10-23T04:35:12.000Z"
+        },
+        {
+          "nodeId": "node-3",
+          "storedAt": "2026-10-23T04:35:12.004Z"
+        },
+        {
+          "nodeId": "node-1",
+          "storedAt": "2026-10-23T04:35:12.004Z"
+        }
+      ]
+    },
+    {
+      "fileId": "507b0816-bf35-41d1-9aee-8998296f2485",
+      "ownerId": "142939e5-2238-4eda-990a-32ef1e89dd01",
+      "originalName": "EasyChat_NMIMS_Presentation_Final.pptx",
+      "sizeBytes": 246800,
+      "checksum": "sha256:c6dfc6c0890fbb90b423a7d53db8a3d16af6aa67a724f0aad8d936336c44948c",
+      "uploadedAt": "2026-10-24T08:42:38.977Z",
+      "replicas": [
+        {
+          "nodeId": "node-2",
+          "storedAt": "2026-10-24T08:42:38.977Z"
+        },
+        {
+          "nodeId": "node-3",
+          "storedAt": "2026-10-24T08:42:38.972Z"
+        },
+        {
+          "nodeId": "node-1",
+          "storedAt": "2026-10-24T08:42:38.975Z"
+        }
+      ]
+    },
+    {
+      "fileId": "cec33859-4c44-42d2-9470-4da34d6e774f",
+      "ownerId": "142939e5-2238-4eda-990a-32ef1e89dd01",
+      "originalName": "DC_EXP1.pdf",
+      "sizeBytes": 127604,
+      "checksum": "sha256:68cde1c6694efdf4424de7759042c10c9edfb2724282c90fa0f4606096fc81ca",
+      "uploadedAt": "2026-10-24T09:31:44.706Z",
+      "replicas": [
+        {
+          "nodeId": "node-2",
+          "storedAt": "2026-10-24T09:31:44.691Z"
+        },
+        {
+          "nodeId": "node-3",
+          "storedAt": "2026-10-24T09:31:44.704Z"
+        },
+        {
+          "nodeId": "node-1",
+          "storedAt": "2026-10-24T09:31:44.706Z"
+        }
+      ]
+    },
+    {
+      "fileId": "d322939d-b073-489a-bcb9-fbc6b9b7773e",
+      "ownerId": "142939e5-2238-4eda-990a-32ef1e89dd01",
+      "originalName": "gfs-sosp2003.pdf",
+      "sizeBytes": 275941,
+      "checksum": "sha256:108ced8f084131ae6241b2c43c0b8f8bee01a8427c2527cbc204c87f1fdfce33",
+      "uploadedAt": "2026-10-24T10:15:37.711Z",
+      "replicas": [
+        {
+          "nodeId": "node-3",
+          "storedAt": "2026-10-24T10:15:37.711Z"
+        },
+        {
+          "nodeId": "node-1",
+          "storedAt": "2026-10-24T10:15:37.703Z"
+        },
+        {
+          "nodeId": "node-2",
+          "storedAt": "2026-10-24T11:00:50.941Z"
+        }
+      ]
+    },
+    {
+      "fileId": "76a47000-db53-4938-813f-72b0074c6aeb",
+      "ownerId": "142939e5-2238-4eda-990a-32ef1e89dd01",
+      "originalName": "EasyChat_NMIMS_Presentation_Final.pptx",
+      "sizeBytes": 246800,
+      "checksum": "sha256:c6dfc6c0890fbb90b423a7d53db8a3d16af6aa67a724f0aad8d936336c44948c",
+      "uploadedAt": "2026-10-24T10:15:53.968Z",
+      "replicas": [
+        {
+          "nodeId": "node-3",
+          "storedAt": "2026-10-24T10:15:53.968Z"
+        },
+        {
+          "nodeId": "node-1",
+          "storedAt": "2026-10-24T10:15:53.961Z"
+        },
+        {
+          "nodeId": "node-2",
+          "storedAt": "2026-10-24T11:00:51.000Z"
+        }
+      ]
+    },
+    {
+      "fileId": "983fcf84-1230-4398-9eb1-0f70dd21b058",
+      "ownerId": "142939e5-2238-4eda-990a-32ef1e89dd01",
+      "originalName": "Exp_10_A013.docx",
+      "sizeBytes": 27335,
+      "checksum": "sha256:09b2b59fc650994cfb257d84b7cb4ef96f7465772754927777f28c57d1935e40",
+      "uploadedAt": "2026-10-24T11:36:40.539Z",
+      "replicas": [
+        {
+          "nodeId": "node-2",
+          "storedAt": "2026-10-24T11:36:40.476Z"
+        },
+        {
+          "nodeId": "node-3",
+          "storedAt": "2026-10-24T11:36:40.484Z"
+        },
+        {
+          "nodeId": "node-1",
+          "storedAt": "2026-10-24T11:36:40.539Z"
+        }
+      ]
+    },
+    {
+      "fileId": "5e61a461-2471-4042-8059-8054b4d40f16",
+      "ownerId": "142939e5-2238-4eda-990a-32ef1e89dd01",
+      "originalName": "70572400125-EXP8.pdf",
+      "sizeBytes": 546702,
+      "checksum": "sha256:3f0e17ec812ef790a21feb5bef067b8032126cb10b9f3881ec41ef24e5a2af9f",
+      "uploadedAt": "2026-10-24T11:39:46.201Z",
+      "replicas": [
+        {
+          "nodeId": "node-3",
+          "storedAt": "2026-10-24T11:39:46.201Z"
+        },
+        {
+          "nodeId": "node-1",
+          "storedAt": "2026-10-24T11:39:46.177Z"
+        },
+        {
+          "nodeId": "node-2",
+          "storedAt": "2026-11-05T12:55:25.894Z"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "eventId": "5b30d02b-9a52-4bb3-9d8d-eb2c051996e0",
+      "fileId": "d322939d-b073-489a-bcb9-fbc6b9b7773e",
+      "sourceNodeId": "node-3",
+      "targetNodeId": "node-2",
+      "status": "SUCCESS",
+      "startedAt": "2026-10-24T11:00:50.794Z",
+      "attemptNumber": 1,
+      "completedAt": "2026-10-24T11:00:50.946Z"
+    },
+    {
+      "eventId": "7790a3b4-f166-49bc-afbc-1801c2be6892",
+      "fileId": "76a47000-db53-4938-813f-72b0074c6aeb",
+      "sourceNodeId": "node-3",
+      "targetNodeId": "node-2",
+      "status": "SUCCESS",
+      "startedAt": "2026-10-24T11:00:50.954Z",
+      "attemptNumber": 1,
+      "completedAt": "2026-10-24T11:00:51.016Z"
+    },
+    {
+      "eventId": "02af4d9b-3576-4489-8f21-8c8e79518e37",
+      "fileId": "5e61a461-2471-4042-8059-8054b4d40f16",
+      "sourceNodeId": "node-3",
+      "targetNodeId": "node-2",
+      "status": "SUCCESS",
+      "startedAt": "2026-11-05T12:55:24.432Z",
+      "attemptNumber": 1,
+      "completedAt": "2026-11-05T12:55:25.913Z"
+    }
+  ]
+}

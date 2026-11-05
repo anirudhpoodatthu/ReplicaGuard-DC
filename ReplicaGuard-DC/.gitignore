@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.js.map
+*.d.ts.map
+.env
+storage/node-1/
+storage/node-2/
+storage/node-3/
+coverage/
+*.log

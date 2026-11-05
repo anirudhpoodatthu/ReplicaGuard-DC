@@ -1,0 +1,18 @@
+REPLICAGUARD FINAL PACKAGE
+
+STARTUP
+1. Extract this ZIP into a new folder.
+2. Make sure Node.js LTS is installed on Windows.
+3. Double-click START-REPLICAGUARD-DESKTOP.bat. First launch needs internet to install dependencies.
+4. Create your account in the app. On a fresh install, the first account is the administrator. Use an email/password you can remember.
+
+LOCAL URLS (when services are running)
+User website: http://127.0.0.1:5173/
+Admin website: http://127.0.0.1:5173/admin
+Both routes use the same frontend service; /admin is the admin dashboard route. Sign in with the first account to access admin tools.
+
+IMPORTANT
+- This package is a source project with an automatic launcher, not a standalone Windows installer. Node.js is required and first setup requires internet.
+- Do not expose this demo publicly as-is. Node registration/heartbeat and storage-node admin controls still need production-grade protection.
+- The three replicas are directories on this computer, not independent physical machines.
+- If startup fails, send logs/desktop-launch.log and logs/desktop-services.log. Do not delete storage/server1, storage/server2, or storage/server3 if they contain files.

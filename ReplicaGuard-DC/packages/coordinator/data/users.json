@@ -1,0 +1,18 @@
+[
+  {
+    "id": "142939e5-2238-4eda-990a-32ef1e89dd01",
+    "email": "7196mohan@gmail.com",
+    "salt": "b2de80f43ef8104c26289bc0db732511",
+    "passwordHash": "872661567b3f00f7bb46b8bc15fc707beb0dd0f3c50e44eae331cbd3014db2bd96dd0e158e5c660f15b4b71efc7eee8f52112dada2d04eb0c2dcf832e7f5706b",
+    "role": "admin",
+    "createdAt": "2026-10-23T04:34:49.260Z"
+  },
+  {
+    "id": "740bf03c-5464-4242-9877-93017baedfe9",
+    "email": "anirudhpoodatthu@gmail.com",
+    "salt": "d0ed4dcccb87c42517772cceb22b9cdf",
+    "passwordHash": "16a6a153afae6da00939b0740bda9d17b49de7c7a9f06a10488dbcef5197f4309c67076f04bd6cd9443544a11effed9d54cb1a5c721b71b2a732712d5fc5072f",
+    "role": "user",
+    "createdAt": "2026-10-24T08:40:47.541Z"
+  }
+]

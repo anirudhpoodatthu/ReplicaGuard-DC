@@ -1,0 +1,13 @@
+REPLICAGUARD DESKTOP APP — STARTUP FIX
+
+1. Extract the whole ZIP to a normal writable folder (not inside the ZIP preview).
+2. Make sure Node.js LTS is installed.
+3. Double-click START-REPLICAGUARD-DESKTOP.bat.
+4. The launcher automatically installs dependencies if missing, builds the workspaces, and opens the desktop app.
+5. Keep the launcher window open while using ReplicaGuard.
+
+DIAGNOSTICS
+- logs/desktop-launch.log: dependency/build/Electron launcher output.
+- logs/desktop-services.log: coordinator, storage nodes and web service output.
+
+If startup fails, send these log files. This is an Electron wrapper and requires Node.js and internet for first setup. It does not publish a public website.

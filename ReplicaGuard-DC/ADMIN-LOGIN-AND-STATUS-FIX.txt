@@ -1,0 +1,10 @@
+ReplicaGuard local fixes
+
+- /admin now waits for the saved session to be verified before showing the dashboard.
+- Non-admin accounts are blocked from the admin UI; server-side requireAdmin checks remain in place.
+- Coordinator connection indicator now checks the public /health endpoint separately from admin-only status endpoints. A denied admin request no longer falsely marks the coordinator offline.
+- The web polling loop refreshes after sign-in/sign-out and when account role is resolved.
+
+Run START-REPLICAGUARD-DESKTOP.bat from this project folder. Do not delete data/ or storage/ when updating an existing install.
+
+Note: This source bundle was patched, but a full build could not be verified in this environment because npm dependency installation timed out. If the launcher reports a build error, inspect logs/desktop-launch.log.

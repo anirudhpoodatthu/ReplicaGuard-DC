@@ -1,0 +1,34 @@
+{
+  "name": "replicaguard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ReplicaGuard: Self-Healing Distributed File Storage System",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@replicaguard/shared && npm run build --workspace=@replicaguard/storage-node && npm run build --workspace=@replicaguard/coordinator && npm run build --workspace=@replicaguard/web",
+    "test": "npm run test --workspaces --if-present",
+    "test:e2e": "jest --config jest.e2e.config.js --runInBand",
+    "typecheck": "npm run build --workspace=@replicaguard/shared && npm run build --workspace=@replicaguard/storage-node && npm run build --workspace=@replicaguard/coordinator && npm run build --workspace=@replicaguard/web",
+    "dev": "concurrently --kill-others --prefix \"[{name}]\" --names \"coordinator,node-1,node-2,node-3,web\" --prefix-colors \"cyan,green,yellow,magenta,blue\" \"npm run dev --workspace=packages/coordinator\" \"cross-env NODE_ID=node-1 PORT=4101 STORAGE_DIR=storage/server1 npm run dev --workspace=packages/storage-node\" \"cross-env NODE_ID=node-2 PORT=4102 STORAGE_DIR=storage/server2 npm run dev --workspace=packages/storage-node\" \"cross-env NODE_ID=node-3 PORT=4103 STORAGE_DIR=storage/server3 npm run dev --workspace=packages/storage-node\" \"npm run dev --workspace=packages/web\"",
+    "dev:web": "npm run dev --workspace=packages/web",
+    "dev:spare": "cross-env NODE_ID=node-4 PORT=4104 STORAGE_DIR=storage/server4 npm run dev --workspace=packages/storage-node",
+    "clean": "npm run clean --workspaces --if-present && rimraf storage/node-1 storage/node-2 storage/node-3 storage/node-4",
+    "lint": "eslint \"packages/*/src/**/*.ts\"",
+    "desktop": "electron desktop/main.cjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cookie": "0.7.2",
+    "cross-env": "^7.0.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3",
+    "electron": "^35.0.0"
+  },
+  "overrides": {
+    "light-my-request": {
+      "cookie": "0.7.2"
+    }
+  }
+}

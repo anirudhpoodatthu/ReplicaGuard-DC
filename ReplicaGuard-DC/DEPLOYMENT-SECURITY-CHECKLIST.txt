@@ -1,0 +1,10 @@
+ReplicaGuard deployment checklist (do not skip)
+
+1. Set AUTH_SECRET to a long random secret (at least 32 random bytes). Do not use the sample value.
+2. Keep the coordinator, storage nodes, data/users.json, data/metadata.json and storage/ folders on your computer.
+3. Do not port-forward the coordinator or storage-node ports directly to the public internet.
+4. Configure HTTPS via a trusted reverse proxy or secure tunnel and allow only the web entrypoint externally.
+5. Before public sharing, protect node registration/heartbeats with a cluster secret, protect storage-node admin simulation endpoints, and remove token query-string authentication from downloads.
+6. Create a separate admin account only through a controlled bootstrap procedure. BOOTSTRAP_FIRST_USER_ADMIN=true grants admin to the first registered account, so use it only on a fresh private setup and turn it off immediately afterward.
+7. Run npm ci, then npm run build. Test signup, login, cross-account file access denial, upload, all three replica files on disk, download, restart persistence, and admin authorization.
+8. Keep backups. Replicas on one physical computer do not protect against disk failure, theft, ransomware, or loss of the computer.
